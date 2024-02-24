@@ -12,6 +12,7 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 /* body{
     background: black !important;
 } */
@@ -52,9 +53,56 @@ nav {
     display: contents;
 }
 
+.menu-icons {
+    color: #F8EEB4;
+    font-size: 18px;
+    display: none;
+}
+
+.menu-icons:hover {
+    color: #f7ce3e;
+    transition: 0.5s;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    list-style-type: none;
+    top: 0;
+    right: 0;
+    height: 450px;
+    width: 300px;
+    z-index: 999;
+    background-color: #3a3524ba;
+    backdrop-filter: blur(6px);
+    box-shadow: -5px 0 10px #0b1000ad;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 8px;
+}
+
+i.fa.fa-arrow-left {
+    color: white;
+    font-size: 18px;
+    padding: 30px 0px;
+}
+
+.sidebar-links-a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 16px 20px;
+    transition: all 0.1s ease-in-out;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
 .nav_links {
     list-style: none;
     margin-bottom: 0px;
+    transition: 0.5s;
 }
 
 .nav_links li {
@@ -257,11 +305,12 @@ section#about {
     letter-spacing: 4px;
 }
 
-.left-content h4 {
+.about h4 {
     color: #3e3c3c;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 3px;
+    padding: 50px 0px 0px 85px;
 }
 
 
@@ -291,6 +340,10 @@ section#about {
     cursor: pointer;
 }
 
+.mbl-abt-img {
+    display: none;
+}
+
 /********* Skills section ********/
 .skills {
     /* margin: 0px 35px; */
@@ -306,7 +359,7 @@ section#about {
 .skills-h5 {
     font-size: 32px;
     color: #3e3c3c;
-    padding:30px 0px;
+    padding: 30px 0px;
     font-weight: 600;
 }
 
@@ -318,7 +371,7 @@ section#about {
 }
 
 .card {
-    margin-right:20px;
+    margin-right: 20px;
     margin-bottom: 10px;
     width: 100px;
     text-align: center;
@@ -335,13 +388,13 @@ img.skills-icon {
 
 h4.skill-name {
     font-size: 14px;
-    color: grey ;
+    color: grey;
 }
 
 /* ******* Education section******** */
 
-.education{
-height: 500px;
+.education {
+    height: 500px;
 }
 
 .education-bg {
@@ -352,37 +405,28 @@ height: 500px;
     /* width: 100%; */
 }
 
-.edu-container {
-    padding: 20px 50px;
-    margin: 0px 35px;
+.mbl-card1-title {
+    height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
-    top: -450px;
 }
 
-h1.edu-h1 {
-    font-size: 120px;
-    font-weight: 800;
-    color: #16014a;
-    text-shadow: 5px 5px #3F51B5;
-    padding-bottom: 10px;
+.mbl-card1-description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 26px;
 }
 
-h1.edu-h1:hover{
-    text-shadow: 2px 2px #3F51B5;
-    transform:translate(2px,2px);
-}
-
-.card-1 {
-   height: 350px;
-   background: #3e3e3e70;
-   backdrop-filter: blur(4px);
-   width: 800px;
-   border-radius: 8px;
-   border: 2px solid #FF9800;
-   box-shadow: 5px 5px 10px #4e4e4e;
+.mbl-card-1 {
+    height: 350px;
+    background: #3e3e3e70;
+    backdrop-filter: blur(4px);
+    width: 800px;
+    border-radius: 8px;
+    border: 2px solid #FF9800;
+    box-shadow: 5px 5px 10px #4e4e4e;
     display: none;
 }
 
@@ -398,6 +442,26 @@ h1.edu-h1:hover{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 26px;
+}
+
+.card-1 {
+    height: 350px;
+    background: #3e3e3e70;
+    backdrop-filter: blur(4px);
+    width: 800px;
+    border-radius: 8px;
+    border: 2px solid #FF9800;
+    box-shadow: 5px 5px 10px #4e4e4e;
+    display: none;
+}
+
+h2.edu-detail {
+    text-align: center;
+    font-weight: 800;
+    padding: 15px 0px 8px;
+    font-size: 26px;
+    color: black;
+    text-shadow: 3px 3px #7c7c7c;
 }
 
 img.clg-pic {
@@ -421,17 +485,40 @@ img.clg-logo {
     height: 50px;
 }
 
-img.edu-img {
-    height: 350px;
+.edu-container {
+    padding: 20px 50px;
+    margin: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -450px;
 }
 
-h2.edu-detail {
-    text-align: center;
+h1.edu-h1 {
+    font-size: 120px;
     font-weight: 800;
-    padding: 15px 0px 8px;
-    font-size: 26px;
-    color: black;
-    text-shadow: 3px 3px #7c7c7c;
+    color: #16014a;
+    text-shadow: 5px 5px #3F51B5;
+    padding-bottom: 10px;
+}
+
+h1.mbl-edu-h1 {
+    font-size: 120px;
+    font-weight: 800;
+    color: #16014a;
+    text-shadow: 5px 5px #3F51B5;
+    padding-bottom: 10px;
+    display: none;
+}
+
+h1.edu-h1:hover {
+    text-shadow: 2px 2px #3F51B5;
+    transform: translate(2px, 2px);
+}
+
+img.edu-img {
+    height: 350px;
 }
 
 
@@ -453,7 +540,7 @@ h2.edu-detail {
     text-shadow: 5px 2px #2f2f2e;
     letter-spacing: 3px;
     text-align: center;
-        margin: 20px 0px 50px 0px;
+    margin: 20px 0px 50px 0px;
 }
 
 .portfolio-content {
@@ -668,7 +755,7 @@ h2.edu-detail {
 .model-content {
     width: 100%;
     height: auto;
-   background: #ffffff85;
+    background: #ffffff85;
     backdrop-filter: blur(30px);
     display: flex;
     justify-content: center;
@@ -753,7 +840,7 @@ h2.edu-detail {
 /******* Footer Section ******/
 .footer-content {
     width: 100%;
-    height: 96vh;
+    height: 62vh;
 }
 
 .ani-text {
@@ -821,7 +908,7 @@ h2.edu-detail {
 .scroll-efft .wrap {
     background: url("../img/skyline-1.png") repeat-x;
     background-position-y: -150px;
-   height: 175px;
+    height: 175px;
     width: 5076px;
     animation: slide 60s linear infinite;
 
@@ -883,9 +970,9 @@ h2.edu-detail {
 /******************************** Media Query all mobile phones *************************************/
 
 @media screen and (max-width:600px) {
-    header {
+    /* header {
         background: #fff;
-    }
+    } */
 
     header img {
         width: 50%;
@@ -966,11 +1053,6 @@ h2.edu-detail {
             
            }*/
     .main-content h3 {
-        display: none;
-    }
-
-    /****** scroll down arrow *********/
-    .indicator span {
         display: none;
     }
 
@@ -1085,107 +1167,78 @@ h2.edu-detail {
 
 @media screen and (min-width:600px) and (max-width:992px) {
     header {
-        background: #fff;
+        display: flex;
+        justify-content: space-between;
     }
 
-    header img {
-        width: 50%;
+    .logo-img {
+        width: 130px;
+        margin-left: 50px;
     }
 
-    /*.nav_links{
-               display: none;
-           }  
-           .menu-toggle{
-               display: block;
-               margin-right: 5px;
-               font-size: 14px;
-           }*/
-    .main-content h3 {
+    .nav_links {
         display: none;
     }
 
-    ul.nav_links {
-        position: absolute;
-        width: 50%;
-        height: calc(100vh - 0px);
-        background: #888;
-        top: 0px;
-        left: -100%;
-        transition: 0.5s;
-        z-index: 999;
-    }
-
-    ul.ac {
-        left: 0px;
-    }
-
-    .nav_links li {
+    .menu-icons {
         display: block;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
-    .nav_links li.disable_logo {
-        display: unset;
-        width: 50%;
-        margin-left: auto;
-    }
-
-    .nav_links li.disable_logo img {
-        width: 50%;
-        margin: 20px 80px;
-    }
-
-    .nav_links li:first-child a:hover {
-        border: none;
-    }
-
-    .nav_links li a:hover,
-    .nav_links li a.active {
-        color: white;
-    }
-
-    .nav_links li.disable_logo {
-        display: unset;
-        width: 50%;
-        margin: auto;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-right: 5px;
-        font-size: 20px;
-        cursor: pointer;
+        font-size: 24px;
+        margin-right: 50px;
     }
 
 
     /********* Typing animation *********/
+
     .main-content h1 {
         color: #fff;
         font-size: 2rem;
-        top: 23%;
+        top: 50%;
     }
 
     .main-content h2 {
-        top: 28%;
+        top: 55%;
         font-size: 2rem;
     }
 
-    .indicator span {
+    .main-content h3 {
         display: none;
     }
 
+    .intro-avatar {
+        height: 300px !important;
+        top: 220px !important;
+        left: 30px !important;
+    }
+
+
     /****** about me section ****/
     .abt-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 20px 35px 50px 35px;
+    }
+
+    .mbl-abt-img {
+        display: inline-block;
+        height: 250px;
+        position: relative;
+        top: 10px;
+        left: 25%;
+        margin-bottom: -200px;
+    }
+
+    .about .right-content {
+        display: none !important;
+    }
+
+    .abt-des {
+        margin-top: 230px;
     }
 
     .clear-hr {
-        width: 100%;
-        height: 50px;
+        display: none;
     }
 
     .clear-fix {
@@ -1195,6 +1248,114 @@ h2.edu-detail {
     .abt-content h2 {
         font-size: 2rem;
         align-items: center;
+    }
+
+    /********* Education section *******/
+
+    .edu-h1 {
+        display: none;
+    }
+
+    .edu-img {
+        height: 100px !important;
+    }
+
+    .edu-container {
+        width: 550px;
+        margin-top: -30px;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+    }
+
+    .mbl-edu-h1 {
+        display: block !important;
+        font-size: 42px !important;
+    }
+
+    .mbl-card1-title {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mbl-card1-description {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 26px;
+    }
+
+    .mbl-card-1 {
+        height: 300px;
+        background: #3e3e3e70;
+        backdrop-filter: blur(4px);
+        width: 600px;
+        border-radius: 8px;
+        border: 2px solid #FF9800;
+        box-shadow: 5px 5px 10px #4e4e4e;
+        display: block;
+    }
+
+    h2.edu-detail {
+        text-align: center;
+        font-weight: 800;
+        padding: 15px 0px 8px;
+        font-size: 22px;
+        color: black;
+        text-shadow: 3px 3px #7c7c7c;
+    }
+
+    img.clg-pic {
+        height: 160px;
+        border-radius: 8px;
+    }
+
+    p.edu-description {
+        font-size: 20px;
+        font-weight: 600;
+        background: #c3c3c354;
+        padding: 37px 10px;
+        border-radius: 8px;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2a0062;
+        text-shadow: 1px 1px #2196F3;
+    }
+
+    img.clg-logo {
+        height: 40px;
+    }
+
+    /********* Skills section *******/
+    .skills {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .skills-img {
+        height: 300px;
+        position: relative;
+        top: 26px;
+    }
+
+    .skills-icon {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    .skills-container {
+        justify-content: space-evenly;
+        width: 350px;
     }
 
     /********* Porfolio Modal *******/
@@ -1263,7 +1424,7 @@ h2.edu-detail {
         margin-left: auto;
     }
 
-    .intro-avatar{
+    .intro-avatar {
         margin-left: -60px;
         margin-top: -85px;
     }
