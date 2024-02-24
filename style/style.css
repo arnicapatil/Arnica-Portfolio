@@ -280,7 +280,7 @@ section#about {
 }
 
 .abt-content {
-    margin: 50px 35px;
+    margin: 0px 35px 50px 35px;
     background: #ffff;
     display: flex;
     justify-content: center;
@@ -970,62 +970,24 @@ img.edu-img {
 /******************************** Media Query all mobile phones *************************************/
 
 @media screen and (max-width:600px) {
-    /* header {
-        background: #fff;
-    } */
-
-    header img {
-        width: 50%;
+    header {
+        display: flex;
+        justify-content: space-between;
     }
 
-    ul.nav_links {
-        position: fixed;
-        width: 50%;
-        height: 100%;
-        background: #888;
-        top: 0px;
-        left: -100%;
-        transition: 0.5s;
-        z-index: 999;
+    .logo-img {
+        width: 130px;
+        margin-left: 50px;
     }
 
-    ul.ac {
-        left: 0px;
+    .nav_links {
+        display: none;
     }
 
-    .nav_links li {
+    .menu-icons {
         display: block;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
-    .nav_links li.disable_logo {
-        display: unset;
-        width: 50%;
-        margin-left: auto;
-    }
-
-    .nav_links li.disable_logo img {
-        width: 80%;
-        margin: 20px 0px 10px;
-    }
-
-    .nav_links li:first-child a:hover {
-        border: none;
-    }
-
-    .nav_links li a:hover,
-    .nav_links li a.active {
-        color: white;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-right: 5px;
-        font-size: 20px;
-        cursor: pointer;
+        font-size: 24px;
+        margin-right: 50px;
     }
 
     /********* Typing animation *********/
@@ -1056,48 +1018,154 @@ img.edu-img {
         display: none;
     }
 
-    /******** About Us ***********/
-
+    /****** about me section ****/
     .abt-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 35px 50px 35px;
     }
 
-    .abt-content .right-content .abt-img {
-        max-width: 100%;
-        height: auto;
+    .mbl-abt-img {
+        display: inline-block;
+        height: 250px;
+        position: relative;
+        top: 10px;
+        left: 25%;
+        margin-bottom: -200px;
     }
 
-    .clear-fix {
-        height: 80px;
+    .about .right-content {
+        display: none !important;
+    }
+
+    .abt-des {
+        margin-top: 230px;
     }
 
     .clear-hr {
-        width: 100%;
+        display: none;
+    }
+
+    .clear-fix {
         height: 50px;
     }
 
     .abt-content h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        align-items: center;
     }
 
-    .left-content h4 {
-        font-size: 1.2rem;
+    /********* Education section *******/
+
+    .edu-h1 {
+        display: none;
     }
 
-    .abt-content .left-content p {
+    .edu-img {
+        height: 100px !important;
+    }
+
+    .edu-container {
+        width: 450px;
+        margin-top: -30px;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+    }
+
+    .mbl-edu-h1 {
+        display: block !important;
+        font-size: 42px !important;
+    }
+
+    .mbl-card1-title {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mbl-card1-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    .mbl-card-1 {
+        height: 270px;
+        background: #3e3e3e70;
+        backdrop-filter: blur(4px);
+        width: 360px;
+        border-radius: 8px;
+        border: 2px solid #FF9800;
+        box-shadow: 5px 5px 10px #4e4e4e;
+        display: block;
+    }
+
+    h2.edu-detail {
+        text-align: center;
+        font-weight: 800;
+        padding: 15px 0px 8px;
         font-size: 14px;
+        color: black;
+        text-shadow: 3px 3px #7c7c7c;
     }
 
-    .abt-content .left-content {
-        padding: 0px;
+    img.clg-pic {
+        height: 100px;
+        border-radius: 8px;
     }
 
-    .left-content h5 {
-        font-size: 1.5rem;
+    p.edu-description {
+        width: 300px;
+        /* height: 52px; */
+        font-size: 16px;
+        font-weight: 600;
+        background: #c3c3c354;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 0;
+        text-align: center;
+        color: #2a0062;
+        text-shadow: 1px 1px #2196F3;
     }
 
-    .portfolio-items img {
-        height: auto;
+    img.clg-logo {
+        height: 32px;
+    }
+
+    /********* Skills section *******/
+    .skills {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .skills-img {
+        height: 300px;
+        position: relative;
+        top: 26px;
+    }
+
+    .skills-icon {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    .skills-container {
+        justify-content: space-evenly;
+        width: 350px;
     }
 
     /********* Porfolio Modal *******/
@@ -1161,6 +1229,10 @@ img.edu-img {
         font-size: 1.8rem;
         margin: 10px 10px;
     }
+}
+
+.footer-content {
+    height: 54vh;
 }
 
 /****************************************** ipad & Notepad ********************************************/
