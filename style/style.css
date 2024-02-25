@@ -13,9 +13,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* body{
-    background: black !important;
-} */
 li,
 a,
 button {
@@ -73,7 +70,7 @@ nav {
     height: 450px;
     width: 300px;
     z-index: 999;
-    background-color: #3a3524ba;
+    background-color: #181818eb;
     backdrop-filter: blur(6px);
     box-shadow: -5px 0 10px #0b1000ad;
     flex-direction: column;
@@ -116,7 +113,6 @@ i.fa.fa-arrow-left {
     cursor: pointer;
     padding: 5px 20px;
     transition: all 0.1s ease-in-out;
-    /* color: #c1c1c1; */
     font-size: 18px;
     letter-spacing: 1.5px;
 }
@@ -125,9 +121,6 @@ i.fa.fa-arrow-left {
     color: #f7ce3e;
     transform: translateY(-5px);
     transition: 0.5s;
-    /* padding: 5px 20px; */
-
-    /* color: #ff1f5d; */
 }
 
 .menu-toggle {
@@ -160,7 +153,6 @@ i.fa.fa-arrow-left {
     position: absolute;
     top: 35%;
     left: 35%;
-    /* transform: translate(-50%,-50%); */
     font-family: 'Roboto', sans-serif;
     letter-spacing: 5px;
     font-size: 4.5rem;
@@ -391,142 +383,9 @@ h4.skill-name {
     color: grey;
 }
 
-/* ******* Education section******** */
-
-.education {
-    height: 500px;
-}
-
-.education-bg {
-    background-image: url(../img/student.jpg);
-    background-position: -80px 6px;
-    filter: opacity(0.25);
-    height: 500px;
-    /* width: 100%; */
-}
-
-.mbl-card1-title {
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.mbl-card1-description {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 26px;
-}
-
-.mbl-card-1 {
-    height: 350px;
-    background: #3e3e3e70;
-    backdrop-filter: blur(4px);
-    width: 800px;
-    border-radius: 8px;
-    border: 2px solid #FF9800;
-    box-shadow: 5px 5px 10px #4e4e4e;
-    display: none;
-}
-
-.card1-title {
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.card1-description {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 26px;
-}
-
-.card-1 {
-    height: 350px;
-    background: #3e3e3e70;
-    backdrop-filter: blur(4px);
-    width: 800px;
-    border-radius: 8px;
-    border: 2px solid #FF9800;
-    box-shadow: 5px 5px 10px #4e4e4e;
-    display: none;
-}
-
-h2.edu-detail {
-    text-align: center;
-    font-weight: 800;
-    padding: 15px 0px 8px;
-    font-size: 26px;
-    color: black;
-    text-shadow: 3px 3px #7c7c7c;
-}
-
-img.clg-pic {
-    height: 200px;
-    border-radius: 8px;
-}
-
-p.edu-description {
-    font-size: 28px;
-    font-weight: 600;
-    background: #c3c3c354;
-    padding: 37px 10px;
-    border-radius: 8px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #2a0062;
-    text-shadow: 1px 1px #2196F3;
-}
-
-img.clg-logo {
-    height: 50px;
-}
-
-.edu-container {
-    padding: 20px 50px;
-    margin: 0px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: -450px;
-}
-
-h1.edu-h1 {
-    font-size: 120px;
-    font-weight: 800;
-    color: #16014a;
-    text-shadow: 5px 5px #3F51B5;
-    padding-bottom: 10px;
-}
-
-h1.mbl-edu-h1 {
-    font-size: 120px;
-    font-weight: 800;
-    color: #16014a;
-    text-shadow: 5px 5px #3F51B5;
-    padding-bottom: 10px;
-    display: none;
-}
-
-h1.edu-h1:hover {
-    text-shadow: 2px 2px #3F51B5;
-    transform: translate(2px, 2px);
-}
-
-img.edu-img {
-    height: 350px;
-}
-
-
 /********* Portfolio section ********/
 #portfolio {
     background: #000020;
-    /* height: 850px; */
-    /* background: #000040; */
     width: 100%;
     padding-top: 10px;
     margin-top: 5px;
@@ -549,8 +408,7 @@ img.edu-img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: row;
     padding-bottom: 80px;
 }
 
@@ -640,63 +498,6 @@ img.edu-img {
 }
 
 .portfolio-modal2 {
-    display: none;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 70px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-}
-
-.portfolio-modal3 {
-    display: none;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 70px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-}
-
-.portfolio-modal4 {
-    display: none;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 70px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-}
-
-.portfolio-modal5 {
     display: none;
     z-index: 1;
     justify-content: center;
@@ -908,7 +709,7 @@ img.edu-img {
 .scroll-efft .wrap {
     background: url("../img/skyline-1.png") repeat-x;
     background-position-y: -150px;
-    height: 175px;
+    height: 170px;
     width: 5076px;
     animation: slide 60s linear infinite;
 
@@ -955,7 +756,6 @@ img.edu-img {
     border: 2px solid #f7ce3e;
     border-radius: 2px;
     cursor: pointer;
-    /* margin-left: 500px;*/
 }
 
 .my-arr {
@@ -994,28 +794,27 @@ img.edu-img {
     .main-content h1 {
         font-size: 22px;
         position: absolute;
-        top: 24%;
+        top: 150px;
+        transform: translate(-50px, 50px);
     }
 
     .main-content h2 {
+        transform: translate(-50px, 50px);
         position: absolute;
-        top: 32%;
+        top: 210px;
         font-size: 14px;
     }
 
-    /*.main-content h3{
-             position: absolute;
-            top: 25%;
-            left: 52%;
-            padding: 0px;
-            font-size: 10px;
-            text-align: center;
-            color: #f7ce3e; 
-            line-height: 15px;
-            
-           }*/
     .main-content h3 {
         display: none;
+    }
+
+    img.intro-avatar {
+        height: 210px;
+        position: absolute;
+        right: 40px;
+        top: 2;
+        top: 330px;
     }
 
     /****** about me section ****/
@@ -1032,12 +831,22 @@ img.edu-img {
         height: 250px;
         position: relative;
         top: 10px;
-        left: 25%;
+        left: 35px;
         margin-bottom: -200px;
+    }
+
+    .abt-content .left-content {
+        padding: 0px 0px;
     }
 
     .about .right-content {
         display: none !important;
+    }
+
+    .about h4 {
+        text-align: left;
+        letter-spacing: 3px;
+        padding: 50px 0px 0px 35px;
     }
 
     .abt-des {
@@ -1057,85 +866,7 @@ img.edu-img {
         align-items: center;
     }
 
-    /********* Education section *******/
 
-    .edu-h1 {
-        display: none;
-    }
-
-    .edu-img {
-        height: 100px !important;
-    }
-
-    .edu-container {
-        width: 450px;
-        margin-top: -30px;
-        flex-direction: column-reverse;
-        /* justify-content: space-between; */
-    }
-
-    .mbl-edu-h1 {
-        display: block !important;
-        font-size: 42px !important;
-    }
-
-    .mbl-card1-title {
-        height: 60px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .mbl-card1-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0px;
-    }
-
-    .mbl-card-1 {
-        height: 270px;
-        background: #3e3e3e70;
-        backdrop-filter: blur(4px);
-        width: 360px;
-        border-radius: 8px;
-        border: 2px solid #FF9800;
-        box-shadow: 5px 5px 10px #4e4e4e;
-        display: block;
-    }
-
-    h2.edu-detail {
-        text-align: center;
-        font-weight: 800;
-        padding: 15px 0px 8px;
-        font-size: 14px;
-        color: black;
-        text-shadow: 3px 3px #7c7c7c;
-    }
-
-    img.clg-pic {
-        height: 100px;
-        border-radius: 8px;
-    }
-
-    p.edu-description {
-        width: 300px;
-        /* height: 52px; */
-        font-size: 16px;
-        font-weight: 600;
-        background: #c3c3c354;
-        padding: 10px;
-        border-radius: 8px;
-        margin-top: 8px;
-        margin-bottom: 0;
-        text-align: center;
-        color: #2a0062;
-        text-shadow: 1px 1px #2196F3;
-    }
-
-    img.clg-logo {
-        height: 32px;
-    }
 
     /********* Skills section *******/
     .skills {
@@ -1158,20 +889,30 @@ img.edu-img {
         font-size: 12px;
     }
 
+    .skills-h5 {
+        margin-left: -20px;
+    }
+
     .card {
         width: 90px;
         margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     .skills-container {
         justify-content: space-evenly;
-        width: 350px;
+        width: 230px;
     }
 
     /********* Porfolio Modal *******/
     .portfolio-items {
         width: 200px;
         height: 200px;
+        margin-top: 0;
+    }
+
+    .portfolio-content {
+        height: unset;
     }
 
     #portfolio h2 {
@@ -1229,10 +970,35 @@ img.edu-img {
         font-size: 1.8rem;
         margin: 10px 10px;
     }
+
+    .social_ico ul {
+        width: 100%;
+        padding-left: 0px !important;
+    }
+
+    .social_ico li {
+        padding: 0px;
+        margin: 0px 20px 0px;
+    }
+
+
 }
 
-.footer-content {
-    height: 54vh;
+
+
+/****************************************** smallest screen ********************************************/
+
+@media screen and (max-width:360px) and (max-width:400px) {
+
+    .portfolio-content {
+        flex-direction: unset;
+        justify-content: center;
+    }
+
+    .portfolio-items {
+        margin-top: 0;
+    }
+
 }
 
 /****************************************** ipad & Notepad ********************************************/
@@ -1264,12 +1030,12 @@ img.edu-img {
     .main-content h1 {
         color: #fff;
         font-size: 2rem;
-        top: 50%;
+        top: 260px;
     }
 
     .main-content h2 {
-        top: 55%;
-        font-size: 2rem;
+        top: 362px;
+        left: 273px;
     }
 
     .main-content h3 {
@@ -1322,83 +1088,6 @@ img.edu-img {
         align-items: center;
     }
 
-    /********* Education section *******/
-
-    .edu-h1 {
-        display: none;
-    }
-
-    .edu-img {
-        height: 100px !important;
-    }
-
-    .edu-container {
-        width: 550px;
-        margin-top: -30px;
-        flex-direction: column-reverse;
-        /* justify-content: space-between; */
-    }
-
-    .mbl-edu-h1 {
-        display: block !important;
-        font-size: 42px !important;
-    }
-
-    .mbl-card1-title {
-        height: 60px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .mbl-card1-description {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-top: 26px;
-    }
-
-    .mbl-card-1 {
-        height: 300px;
-        background: #3e3e3e70;
-        backdrop-filter: blur(4px);
-        width: 600px;
-        border-radius: 8px;
-        border: 2px solid #FF9800;
-        box-shadow: 5px 5px 10px #4e4e4e;
-        display: block;
-    }
-
-    h2.edu-detail {
-        text-align: center;
-        font-weight: 800;
-        padding: 15px 0px 8px;
-        font-size: 22px;
-        color: black;
-        text-shadow: 3px 3px #7c7c7c;
-    }
-
-    img.clg-pic {
-        height: 160px;
-        border-radius: 8px;
-    }
-
-    p.edu-description {
-        font-size: 20px;
-        font-weight: 600;
-        background: #c3c3c354;
-        padding: 37px 10px;
-        border-radius: 8px;
-        margin-bottom: 0;
-        text-align: center;
-        color: #2a0062;
-        text-shadow: 1px 1px #2196F3;
-    }
-
-    img.clg-logo {
-        height: 40px;
-    }
-
     /********* Skills section *******/
     .skills {
         width: 100%;
@@ -1427,14 +1116,14 @@ img.edu-img {
 
     .skills-container {
         justify-content: space-evenly;
-        width: 350px;
+        width: 400px;
     }
 
     /********* Porfolio Modal *******/
-    .portfolio-items {
+    /* .portfolio-items {
         width: 200px;
         height: 200px;
-    }
+    } */
 
     #portfolio h2 {
         font-size: 2rem;
@@ -1497,13 +1186,12 @@ img.edu-img {
     }
 
     .intro-avatar {
-        margin-left: -60px;
-        margin-top: -85px;
+        transform: translate(-100px, -200px);
     }
 
     .main-content h3 {
-        top: 400px;
-        left: 580px;
+        top: 450px;
+        left: 530px;
         text-align: justify;
     }
 
@@ -1511,11 +1199,14 @@ img.edu-img {
     .main-content h1 {
         color: #fff;
         font-size: 2rem;
-        top: 25%;
+        top: 200px;
+        transform: translate(50px, 50px);
     }
 
     .main-content h2 {
-        top: 32%;
+        top: 270px;
+        left: 355px;
+        transform: translate(50px, 50px);
         font-size: 2rem;
     }
 
@@ -1543,8 +1234,12 @@ img.edu-img {
 
     /********* Porfolio Modal *******/
     .portfolio-items {
-        width: 200px;
+        width: 270px;
         height: 200px;
+    }
+
+    .portfolio-content {
+        justify-content: space-evenly;
     }
 
     #portfolio h2 {
@@ -1590,6 +1285,9 @@ img.edu-img {
         position: absolute;
     }
 
+    .footer-content {
+        height: unset;
+    }
 
 
 }
