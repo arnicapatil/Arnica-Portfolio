@@ -50,7 +50,7 @@
             <img id="intro-avatar" class="intro-avatar" src="./img/girl-intro.png" alt="">
             <h1>Hello, I'm <span>Arnica</span>.</h1>
             <h2 data-text="I'm a Front-End Developer">I'm a Front-End Developer</h2>
-            <h3>I’ve Good Experience in designing websites in HTML-CSS, Bootstrap, JavaScript & Jquery basics
+            <h3>I’ve Good Experience in designing websites in HTML-CSS, Bootstrap, JavaScript & Jquery basics.
             </h3>
         </div>
     </section>
@@ -136,7 +136,7 @@
         <div class="portfolio-info">
             <h2>Featured Work</h2>
             <div class="portfolio-content" id="particles-js-work">
-                <div class="portfolio-items" id="sel-item1"><img src="img/nisargaseva.JPG" alt=""><span
+                <div class="portfolio-items" id="sel-item1"><img src="img/nisargaseva-sparks.JPG" alt=""><span
                         class="arrw">&times;</span></div>
                 <div class="portfolio-items" id="sel-item2"><img src="img/1dental-care.png" alt=""><span
                         class="arrw">&times;</span></div>
@@ -161,7 +161,6 @@
                             <p class="p-cat">Duration : 01 September 2021 – 30 September 2021 </p>
                             <p class="p-cat">CMS used : HTML, CSS, Bootstrap and RazorPay Payment gateway (Dummy).</p>
                             <p class="p-cat">Role : Front-End Developer </p>
-                            <!--<p class="p-cat">Worked on : Custom Changes, Google Anaylitcs Reports & SEO </p>-->
                             <a href="https://arnicapatil.github.io/nisarga-seva/"><button class="btn-web">Visit
                                     Website</button></a>
                         </div>
@@ -177,7 +176,7 @@
                     </div>
                     <div class="model-content">
                         <div class="portfolio-modal-content">
-                            <h3>Sahu Technologies </h3>
+                            <h3>Sahu Technologies - Internship</h3>
                             <p> </p>
 
                             <p class="p-cat">Project : Dental care</p>
@@ -199,7 +198,7 @@
                     </div>
                     <div class="model-content">
                         <div class="portfolio-modal-content">
-                            <h3>FileFox (Final year Project) </h3>
+                            <h3>FileFox - Final year Project </h3>
                             <p>Final year project</p>
 
                             <p class="p-cat">Project : FileFox</p>
@@ -209,9 +208,8 @@
                     </div>
                 </div>
             </div>
-
-
-            <!---------------- End Portfolio-modal ------------------->
+        </div>
+        <!---------------- End Portfolio-modal ------------------->
     </section>
 
 
@@ -222,9 +220,10 @@
             <h2 class="ani-txt"> And Stay Connected.</h2>
             <div class="social_ico">
                 <ul>
-                    <li><a href="#"></a><i class="fab fa-linkedin"></i></li>
-                    <li><a href="#"></a><i class="fab fa-github"></i></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/arnica-patil-02118b217/"></a><i
+                            class="fab fa-linkedin"></i></li>
+                    <li><a href="https://github.com/arnicapatil"></a><i class="fab fa-github"></i></li>
+                    <li><a href="arnicapatil09@gmail.com"><i class="fas fa-envelope"></i></a></li>
                 </ul>
             </div>
             <div class="scroll-efft">
@@ -255,8 +254,7 @@
 
         $(document).ready(function () {
             $(".fa.fa-bars").click(function () {
-                $(".sidebar").css("display", "block");
-                $(".fa.fa-bars").css("display", "none");
+                $(".sidebar").toggle();
             });
 
 
